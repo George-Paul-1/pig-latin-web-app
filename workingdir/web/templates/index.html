@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+        body {background-color: black;}
+        h1 {color: pink;}
+        h2 {color: white;}
+        p {color: white;}
+        </style>
+    </head>
+    <body>
+        <h1>Pig Latin Generator</h1>
+        <h1>(ˆ(oo)ˆ)</h1>
+        <p>Pig Latin: a secret language formed from English by 
+            transferring the initial consonant or consonant 
+            cluster of each word to the end of the word and 
+            adding a vocalic syllable (usually /eɪ/): so pig Latin 
+            would be igpay atinlay.</p>
+            <form action="/" method="POST">
+            <input type="text" name="sentence">
+            <br><br>
+            <input type="submit" value="TRANSLATE">
+        </form>
+        <div>
+            <h2>Translation History:</h2>
+            {% for translation in translations %}
+            <p>{{translation}}</p>
+            {% endfor %}
+        </div>
+    </body>
+</html>

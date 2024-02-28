@@ -1,0 +1,11 @@
+{
+    "name": "georgepaul-piglatin-database",
+    "domain": false,
+    "hostname": "georgepaul-piglatin-database",
+    "image": "postgres:12",
+    "env": {
+        "POSTGRES_PASSWORD": "@georgepaul-postgres-password" 
+    },
+    "volumes": ["georgepaul_piglatin_database_volume:/var/lib/postgresql/data"]
+}
+
